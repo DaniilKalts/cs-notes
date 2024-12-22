@@ -1,6 +1,6 @@
 - - -
 
-###### Table of Contents:
+#### Table of Contents:
 1. **[[#Understanding IP Addresses:]]**
 	- [[#How IP Address Work:]]
 	- [[#Challenges with IP Addresses:]]
@@ -27,22 +27,23 @@
 
 ### Understanding IP Addresses:
 
+<br />
 
 > [!NOTE] IP (Internet Protocol) Address
-> A unique numerical identifier assigned to devices and services on a network, enabling communication, data transfer, and access to resources.
+> A unique numerical identifier assigned to devices on a network, enabling communication and access to internet resources.
 
 <br />
 
-##### How IP Address Work:
-Every device connected to the internet - like computers, phones, or servers - has an **IP Address**. This unique sequence of numbers, such as `192.158.1.38`, identifies devices and resources on a network, ensuring data is sent to the correct destination.
+#### How IP Address Work:
+Every device connected to the internet, such as computers, phones, or servers, has an **IP address**. This unique sequence of numbers, such as `192.158.1.38`, identifies devices and resources on a network, ensuring data is sent to the correct destination.
 
 Without IP addresses, it would be impossible to locate sender and receiver devices, or access services and resources hosted on those devices.
 
-##### Challenges with IP Addresses:
+#### Challenges with IP Addresses:
 While IP addresses work well for devices, they are difficult for humans to remember, especially when accessing web resources like websites or services. For example:
 - Memorizing `172.217.14.206` is far harder than typing `google.com`.
 
-##### Domain Names as a Solution:
+#### Domain Names as a Solution:
 To make it easier for humans to access web resources, **domain names** were introduced. They serve as human-readable labels that map to IP addresses, providing easy-to-remember alternatives for accessing internet resources like websites, APIs, and downloadable files.
 
 - - -
@@ -51,6 +52,7 @@ To make it easier for humans to access web resources, **domain names** were intr
 
 ### Introduction to Domain Names:
 
+<br />
 
 > [!NOTE] Domain Name
 > A **Human-readable address** that map to an **IP** address.
@@ -59,16 +61,20 @@ To make it easier for humans to access web resources, **domain names** were intr
 
 Think of it as a contact list that represents pairs of names and phone numbers, or a map showing buildings and their addresses.
 
-When you access a resource on the internet, your local computer sends a request to **DNS (Domain Name System)**.
+When you access a resource on the internet, such as a website, your local computer sends a request to **DNS (Domain Name System)**.
+
+<br />
 
 > [!NOTE] DNS (Domain Name System)
-> This is a remote server that stores pairs of **Domains** and corresponding **IP** addresses.
+> A remote server that stores pairs of **Domains** and corresponding **IP** addresses.
 
 <br />
 
 **DNS** is like a translator between humans and machines.
 
-##### Domain Names vs URLs:
+#### Domain Names vs URLs:
+
+<br />
 
 > [!NOTE] URL (Uniform Resource Locator)
 > A **complete address** that specifies the location of a resource on the web, including the protocol, domain name, and optional path or query parameters.
@@ -77,7 +83,7 @@ When you access a resource on the internet, your local computer sends a request 
 
 A **domain name** is part of a **URL** but not the entire address. While you can access a web resource by entering just the domain name, it points to the homepage or default location of the website. A URL provides a more specific address, leading directly to a particular resource.
 
-##### For example:
+#### For example:
 - **Domain Name**: `example.com`
     - This will take you to the main page (homepage) of the website.
 - **URL**: `https://example.com/blog/how-to-learn`
@@ -89,32 +95,34 @@ A **domain name** is part of a **URL** but not the entire address. While you can
 
 ### Anatomy of a Domain Name:
 
+<br />
+
 > [!NOTE] Subdomain
-> This is **the starting portion** of a Domain Name, used to host multiple services or sections under a single domain name.
+> The part that comes before the main domain, **used to host specific services** (like "store" in "store.amazon.com").
 
 👇
 
 > [!NOTE] SLD (Second-Level Domain)
-> This is **the middle portion** of a Domain Name,  representing  the brand, organization, or  purpose of the website.
+> The main part of a domain name, right before the TLD, **usually showing the brand** (like "amazon" in "store.amazon.com").
 
 👇
 
 > [!NOTE] TLD (Top Level Domain)
-> This is **the ending portion** of a domain name, indicating the website's mission.
+> The last part of a domain name, like ".com" in "store.amazon.com," **often showing the domain’s type or location**.
 
 👇
 
 > [!NOTE] Root Domain
-> This is **the unique identifier** formed by combining the **SLD** and **TLD**, without subdomains.
+> The **main domain name** made up of the SLD and TLD, without subdomains (like "amazon.com").
 
 👇
 
 > [!NOTE] FQDN (Fully Qualified Domain Name)
-> This is **the complete address** formed by combining **subdomain** (if any), **SLD**, **TLD**.
+> The **complete domain name**, including the subdomain (if there is one), the SLD, and the TLD (like "store.amazon.com").
 
 <br />
 
-##### Common TLDs:
+#### Common TLDs:
 - **.com** - **Commercial**. Originally intended for commercial businesses but nowadays used by all types of entities, including personal websites.
 	- *For instance*: `amazon.com`, `google.com`.
 - **.org** - **Organization**. Initially designed for nonprofit organizations, but now open for general use. It's frequently associated with nonprofits, charities, and educational institutions. 
@@ -135,7 +143,7 @@ A **domain name** is part of a **URL** but not the entire address. While you can
 
 <br />
 
-##### Country-Specific TLDs:
+#### Country-Specific TLDs:
 - *.cn* - China
 - *.de* - Germany
 - *.uk* - United Kingdom
@@ -145,7 +153,7 @@ A **domain name** is part of a **URL** but not the entire address. While you can
 - *.jp* - Japan
 - *.fr* - France
 
-##### Domain Name Creating Rules:
+#### Domain Name Creating Rules:
 - **Length**: Must be 1–63 characters per segment and no more than 253 characters in total.
 - **Characters**: Use only letters (`a-z`), numbers (`0-9`), and hyphens (`-`).
 - **Hyphen Restrictions**: Cannot begin or end with a hyphen, and no consecutive hyphens (`--`).
@@ -191,7 +199,7 @@ There are **exceptions**, such as **Country-Code TLDs (ccTLDs)**, which may incl
 
 Internationalized Domain Names (IDNs) support non-English scripts, allowing domain names in languages like Russian, Georgian, etc.
 
-##### Examples of IDNs:
+#### Examples of IDNs:
 - `http://россия.рф/`
 	- Subdomain: none
 	- SLD: *россия*
@@ -230,7 +238,9 @@ Domains must be renewed periodically. Otherwise, they may expire and go through 
 
 ### How to get a Domain Name:
 
-##### Understanding Domain Ownership:
+<br />
+
+#### Understanding Domain Ownership:
 
 **You cannot "buy a domain name"**. This ensures unused and abandoned domain names become available for others to use. If every domain name was bought, the web would quickly fill up with unused domain names that were locked and couldn't be used by anyone.
 
@@ -238,7 +248,7 @@ Domains must be renewed periodically. Otherwise, they may expire and go through 
 
 Companies called **registrars** use domain name registries to keep track of technical and administrative information connecting you to your domain name.
 
-##### Finding Available Domains:
+#### Finding Available Domains:
 
 Let's say we need to figure out if `mozilla.org` exists.
 
@@ -262,7 +272,7 @@ Now let's see if we could register `kaltsdaniil.com`.
 
 As we can see, the domain does not exist in the whois database, so we could ask to register it.
 
-##### Steps to Register a Domain:
+#### Steps to Register a Domain:
 1. Go to a registrar's website.
 2. Usually there is a prominent "Get a domain name" call to action. Click on it.
 3. Fill out the form with all required details. Make sure, that you have not misspelled your desired domain name. Once it's paid for, it's too late!
@@ -278,5 +288,4 @@ As we can see, the domain does not exist in the whois database, so we could ask 
 * https://www.youtube.com/watch?v=qO5qcQgiNX4&ab_channel=ElegantThemes
 * https://www.cloudflare.com/en-gb/learning/dns/glossary/what-is-a-domain-name/
 * https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name
-
-And huge credit to chatGPT :D
+* https://chatgpt.com/
